@@ -1,0 +1,16 @@
+[tool.ruff]
+exclude = ["venv", "__pycache__", "migrations", ".venv", ".ruff_cache"]
+line-length = 79
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "W", "UP", "C4"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.ruff.lint.isort]
+known-first-party = ["feedback_admin-tgbot"]
